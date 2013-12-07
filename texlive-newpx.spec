@@ -6,7 +6,7 @@
 # catalog-version 1.051
 Name:		texlive-newpx
 Version:	1.051
-Release:	4
+Release:	5
 Summary:	Alternative uses of the PX fonts, with improved metrics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/newpx
