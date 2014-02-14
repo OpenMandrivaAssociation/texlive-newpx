@@ -1,12 +1,12 @@
-# revision 31949
+# revision 32942
 # category Package
 # catalog-ctan /fonts/newpx
-# catalog-date 2013-10-19 09:52:51 +0200
+# catalog-date 2014-02-11 14:48:59 +0100
 # catalog-license lppl
-# catalog-version 1.051
+# catalog-version 1.11
 Name:		texlive-newpx
-Version:	1.051
-Release:	5
+Version:	1.110
+Release:	1
 Summary:	Alternative uses of the PX fonts, with improved metrics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/newpx
@@ -22,9 +22,12 @@ Requires(post):	texlive-kpathsea
 This package, based on pxfonts, provides many fixes and
 enhancements to that package, splitting it in two parts -
 newpxtext and newpxmath - which may be run independently of one
+The package, based on pxfonts, provides many fixes and
+enhancements to that package, and splits it in two parts
+(newpxtext and newpxmath) which may be run independently of one
 another. It provides scaling, improved metrics, and other
 options. For proper operation, the packages require that the
-packages newtxmath and pxfonts be installed and their map files
+packages newtxmath and txfonts be installed and their map files
 enabled.
 
 %post
