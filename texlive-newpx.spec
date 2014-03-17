@@ -1,11 +1,11 @@
-# revision 32942
+# revision 33009
 # category Package
 # catalog-ctan /fonts/newpx
-# catalog-date 2014-02-11 14:48:59 +0100
+# catalog-date 2014-02-20 11:49:29 +0100
 # catalog-license lppl
-# catalog-version 1.11
+# catalog-version 1.12
 Name:		texlive-newpx
-Version:	1.110
+Version:	1.120
 Release:	1
 Summary:	Alternative uses of the PX fonts, with improved metrics
 Group:		Publishing
@@ -19,9 +19,6 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-This package, based on pxfonts, provides many fixes and
-enhancements to that package, splitting it in two parts -
-newpxtext and newpxmath - which may be run independently of one
 The package, based on pxfonts, provides many fixes and
 enhancements to that package, and splits it in two parts
 (newpxtext and newpxmath) which may be run independently of one
