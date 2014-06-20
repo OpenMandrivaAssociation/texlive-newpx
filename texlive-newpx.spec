@@ -1,12 +1,12 @@
-# revision 33009
+# revision 33379
 # category Package
 # catalog-ctan /fonts/newpx
-# catalog-date 2014-02-20 11:49:29 +0100
+# catalog-date 2014-04-05 09:51:45 +0200
 # catalog-license lppl
-# catalog-version 1.12
+# catalog-version 1.122
 Name:		texlive-newpx
-Version:	1.120
-Release:	2
+Version:	1.122
+Release:	1
 Summary:	Alternative uses of the PX fonts, with improved metrics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/newpx
