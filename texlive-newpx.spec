@@ -6,7 +6,7 @@
 # catalog-version 1.122
 Name:		texlive-newpx
 Version:	1.122
-Release:	3
+Release:	4
 Summary:	Alternative uses of the PX fonts, with improved metrics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/newpx
