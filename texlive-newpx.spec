@@ -1,6 +1,6 @@
 Name:		texlive-newpx
-Version:	1.321
-Release:	2
+Version:	1.33
+Release:	1
 Summary:	Alternative uses of the PX fonts, with improved metrics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/newpx
