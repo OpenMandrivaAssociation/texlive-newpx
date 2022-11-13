@@ -1,12 +1,12 @@
 Name:		texlive-newpx
-Version:	1.33
+Version:	61806
 Release:	1
 Summary:	Alternative uses of the PX fonts, with improved metrics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/newpx
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/newpx.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/newpx.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/newpx.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/newpx.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -22,12 +22,12 @@ packages newtxmath and txfonts be installed and their map files
 enabled.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -43,7 +43,7 @@ enabled.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
