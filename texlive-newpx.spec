@@ -1,5 +1,5 @@
 Name:		texlive-newpx
-Version:	69777
+Version:	69792
 Release:	1
 Summary:	Alternative uses of the PX fonts, with improved metrics
 Group:		Publishing
