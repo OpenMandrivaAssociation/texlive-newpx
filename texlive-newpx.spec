@@ -3,7 +3,7 @@ Version:	69792
 Release:	1
 Summary:	Alternative uses of the PX fonts, with improved metrics
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/newpx
+URL:		https://www.ctan.org/tex-archive/fonts/newpx
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/newpx.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/newpx.doc.r%{version}.tar.xz
