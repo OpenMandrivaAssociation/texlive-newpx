@@ -1,52 +1,26 @@
-Name:		texlive-newpx
-Version:	69792
-Release:	1
+%global tl_name newpx
+%global tl_revision 79618
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	1.551
+Release:	%{tl_revision}.1
 Summary:	Alternative uses of the PX fonts, with improved metrics
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/fonts/newpx
-License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/newpx.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/newpx.doc.r%{version}.tar.xz
+License:	lppl1.3 gfl
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/newpx.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/newpx.doc.r%{tl_revision}.tar.xz
+Source2:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/newpx.source.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-The package, based on pxfonts, provides many fixes and
-enhancements to that package, and splits it in two parts
-(newpxtext and newpxmath) which may be run independently of one
-another. It provides scaling, improved metrics, and other
-options. For proper operation, the packages require that the
-packages newtxmath and txfonts be installed and their map files
-enabled.
+This package, initially based on pxfonts, provides many fixes and
+enhancements to that package, and splits it in two parts (newpxtext and
+newpxmath) which may be run independently of one another. It provides
+scaling, improved metrics, and other options. For proper operation, the
+packages require that the packages newtxmath, pxfonts, and
+TeXGyrePagella be installed and their map files enabled.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/fonts/enc/dvips/newpx
-%{_texmfdistdir}/fonts/map/dvips/newpx
-%{_texmfdistdir}/fonts/afm/public/newpx
-%{_texmfdistdir}/fonts/tfm/public/newpx
-%{_texmfdistdir}/fonts/opentype/public/newpx
-%{_texmfdistdir}/fonts/type1/public/newpx
-%{_texmfdistdir}/fonts/vf/public/newpx
-%{_texmfdistdir}/tex/latex/newpx
-%doc %{_texmfdistdir}/doc/fonts/newpx
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
